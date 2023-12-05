@@ -83,7 +83,7 @@ public class ExcelUtility {
 	 * @return
 	 * @throws Throwable
 	 */
-	public HashMap<String,String> getMultipleDataFromExcel(String sheetName,int keyColumn,int valueColumn,WebDriver driver) throws Throwable
+	public HashMap<String,String> getMultipleDataFromExcel(String sheetName,int keyColumn,int valueColumn) throws Throwable
 	{
 		FileInputStream fis=new FileInputStream(IPathConstants.excelpath);
 		Workbook wb = WorkbookFactory.create(fis);
